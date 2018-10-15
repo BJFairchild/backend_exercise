@@ -1,7 +1,18 @@
 class UserHashtag
+  # --------------------  validations
+  # TODO: fill out all the validations needed
 
-  def save
-    #assume this does a db call and returns true if valid.
-  end
+  # --------------------  attributes
+  # TODO: fill out all the attributes needed
 
+  # --------------------  relationships
+  # TODO: fill out all the relationships needed
+
+  # --------------------  scopes
+  # TODO: fill out all the scopes needed
+
+  # --------------------  call backs
+  # TODO: fill out all the callbacks needed
+
+  # --------------------  functions
 end

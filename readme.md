@@ -8,10 +8,9 @@ the core features are:
 
 - Register using email and password
 - Login using email or username and password
-- Setting a username
-- users can Subscribe to hashtags
+- Users can Subscribe to hashtags
 - Post tweets of 140 character or less with embedded hashtags.
-- Notify all people who subscribed to the hashtags about a new tweet via email.
+- Notify all people who subscribed to the hashtags about a new tweet containing the hashtags they are subscribed to.
 - Include any assumptions made in the email reply, as well as list any gem that is needed.
 
 Include all the attributes, associations, validations, callbacks and the methods you will need to make this work.

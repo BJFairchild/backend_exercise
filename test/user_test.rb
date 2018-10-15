@@ -6,9 +6,14 @@ class TestUser < Minitest::Test
     @meme = User.new
   end
 
-  def test_that_user_validates_password_creation
+  def test_verify_password
   end
 
+  def test_salting_password
+  end
+
+  def test_that_password_and_password_confirmation_are_same_on_create
+  end
 
   def test_that_validates_login_with_email_and_password
   end

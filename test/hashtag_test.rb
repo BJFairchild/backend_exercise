@@ -1,15 +1,16 @@
-require "minitest/autorun"
-require_relative '../lib/tweet'
 
-class TestTweet < Minitest::Test
+require "minitest/autorun"
+require_relative '../lib/hashtag'
+
+class TestHashtag < Minitest::Test
   def setup
     @meme = Tweet.new
   end
 
-  def test_that_belongs_to_a_user
+  def test_that_has_many_tweets
   end
 
-  def test_that_has_many_hashtags
+  def test_that_has_many_users
   end
 
   def test_that_it_is_not_longer_than_140_characters
