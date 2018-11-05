@@ -15,7 +15,7 @@ the core features are:
 
 Include all the attributes, associations, validations, callbacks and the methods you will need to make this work.
 
-We have put together a few small Ruby classes and some basic test cases to help kick things off. You do not need to turn this into a full blown Rails application, act as if these are Rails models and stub any Rails services that you might need ( IE a mailer and database ). The tests are currently a vague outline. They can, and should, be changed and added to.
+We have put together a few small Ruby classes and some basic test cases to help kick things off. You do not need to turn this into a full blown Rails application, act as if these are Rails models and stub any Rails services that you might need ( IE a mailer and database ). The tests are currently a vague outline. They can, and should, be changed and added to to show what you know, but they are OPTIONAL.
 
 When finished with this exercise, please zip up the package of code and send it back to your point of contact.
 
