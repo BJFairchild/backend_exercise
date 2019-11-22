@@ -7,6 +7,7 @@ class TestUser < Minitest::Test
   end
 
   def test_verify_password
+    
   end
 
   def test_salting_password

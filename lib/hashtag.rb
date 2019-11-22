@@ -1,22 +1,14 @@
-class Hashtag
-  # --------------------  validations
-  # TODO: fill out all the validations needed
+class Hashtag < ApplicationRecord
+  has_many :user_hashtags
+  has_many :users, through: :user_hashtags
 
-  # --------------------  attributes
-  # TODO: fill out all the attributes needed
-
-  # --------------------  relationships
-  # TODO: fill out all the relationships needed
-
-  # --------------------  scopes
-  # TODO: fill out all the scopes needed
-
-  # --------------------  call backs
-  # TODO: fill out all the callbacks needed
-
-  # --------------------  functions
-  def notify_users
-    # TODO: write a function that will find all the subscribed user to this
-    # Hashtag, and notify them.
+  def notify_users(HashTag)
+    hashtag = Hashtag.find_by(name: HashTag)
+    @subscribed_users = hashtag.users
+    @subscribed_users.each do |user|
+      User.notify(user, hashtag)
+      #this is where the notify method in the users model would come into play. This method will stub out to a mailer to send an email out to each user subscribed to this hashtag.
+    end
   end
+  
 end

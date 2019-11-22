@@ -7,12 +7,14 @@ class TestTweet < Minitest::Test
   end
 
   def test_that_belongs_to_a_user
+    assert(@meme.users)
   end
 
   def test_that_has_many_hashtags
   end
 
   def test_that_it_is_not_longer_than_140_characters
+    assert(@meme.content.split('').length <= 140)
   end
 
   def test_finding_hashtags_in_tweet
